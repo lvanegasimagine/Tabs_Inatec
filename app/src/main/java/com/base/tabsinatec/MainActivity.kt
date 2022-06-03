@@ -23,8 +23,9 @@ class MainActivity : AppCompatActivity() {
         adapter.addFragment(SettingFragment(), "VISUAL STUDIO")
         viewPager.adapter = adapter
         tabs.setupWithViewPager(viewPager)
+        tabs.tabIconTint = null
 
-        tabs.getTabAt(0)!!.setIcon(R.drawable.ic_html)
+        tabs.getTabAt(0)!!.setIcon(R.drawable.games)
         tabs.getTabAt(1)!!.setIcon(R.drawable.python)
         tabs.getTabAt(2)!!.setIcon(R.drawable.vscode)
     }
